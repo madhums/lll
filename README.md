@@ -29,6 +29,12 @@ parallel([
 })
 ```
 
+## Test
+
+```sh
+$ npm test
+```
+
 ## License
 
 MIT

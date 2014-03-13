@@ -21,7 +21,7 @@ module.exports = function (list, callback) {
   list.forEach(function (fn, i) {
     var cb = function (err, value) {
       if (err) {
-        fn_list.length = 0;
+        list.length = 0;
         len = 0;
         return callback(err);
       } else {
