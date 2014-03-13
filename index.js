@@ -30,6 +30,9 @@ module.exports = function (list, callback) {
       }
       if (!len && !err) return callback(null, result);
     };
-    fn(cb);
+    var _cb = (function (len, result, i) {
+      return cb;
+    })(len, result, i);
+    fn(_cb);
   });
 }
